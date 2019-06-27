@@ -1,0 +1,25 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+black = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-html = "*"
+pytest-timeout = "*"
+pytest-benchmark = "*"
+pytest-black = "*"
+pytest-isort = "*"
+
+[packages]
+flask = "*"
+flask-restplus = "*"
+gunicorn = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
