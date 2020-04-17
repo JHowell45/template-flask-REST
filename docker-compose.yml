@@ -1,0 +1,15 @@
+version: "3"
+services:
+  nginx:
+    image: "nginx:1.13.5"
+    container_name: nginx
+    volumes:
+      - "./nginx_config:/etc/nginx/conf.d"
+    depends_on:
+      - flaskapp
+    ports:
+      - 8080:80
+  flaskapp:
+    build: .
+    container_name: flaskapp
+    command: "pipenv run gunicorn -c gunicorn_config.py wsgi:app"
