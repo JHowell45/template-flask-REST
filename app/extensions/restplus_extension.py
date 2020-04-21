@@ -1,5 +1,5 @@
 """Use this file for instancing the Flask Rest plus application and add routes."""
-from flask_restplus import Api
+from flask_restx import Api
 
 from app.routes.test_routes import api as test_ns
 

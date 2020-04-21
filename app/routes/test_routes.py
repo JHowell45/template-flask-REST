@@ -1,5 +1,5 @@
 """Use this file for creating a test endpoint for checking the Flask application."""
-from flask_restplus import Namespace, Resource
+from flask_restx import Namespace, Resource
 
 api = Namespace(
     "tests",
